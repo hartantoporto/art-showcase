@@ -1,0 +1,20 @@
+import Link from 'next/link';
+import { Search, SlidersHorizontal, Globe2 } from 'lucide-react';
+import { currentUser } from '@/lib/auth';
+import { getCategories, listArtworks } from '@/lib/data';
+import { COUNTRIES } from '@/lib/countries';
+import ArtworkGrid from '@/components/ArtworkGrid';
+export const dynamic = 'force-dynamic';
+export const metadata = { title: 'Explore global art' };
+export default async function Explore({ searchParams }) {
+    const s = await searchParams;
+    const user = await currentUser();
+    const [cats, arts] = await Promise.all([getCategories(), listArtworks({ search: s.q || '', category: s.category || '', country: s.country || '', media: s.media || '', sort: s.sort || 'popular', limit: 72, userId: user?.id })]);
+    const activeCategory = cats.find((category) => category.slug === s.category);
+    const options = [['', 'All formats'], ['image', 'Visual arts'], ['audio', 'Music & audio'], ['video', 'Video & film'], ['document', 'Writing & PDF']];
+    return <main className="container-page pt-12 pb-20">{activeCategory ? <section className="category-feature panel"><div className="category-feature-image"><img src={activeCategory.cover_url || '/images/categories/default.svg'} alt={`Illustration for ${activeCategory.name}`}/></div><div className="category-feature-copy"><div className="eyebrow">CREATIVE DISCIPLINE / {activeCategory.name.toUpperCase()}</div><h1 className="display text-4xl sm:text-6xl mt-3">Explore <span className="gradient-text">{activeCategory.name}.</span></h1><p className="muted mt-4 max-w-xl leading-7 text-sm">{activeCategory.description || 'Explore creative works and discover new perspectives in this discipline.'}</p><Link href="/explore" className="category-feature-reset">Browse all disciplines ↗</Link></div></section> : <><div className="eyebrow">THE WORLDWIDE GALLERY / 01</div><h1 className="display text-5xl sm:text-7xl mt-3">Discover art that <span className="gradient-text">moves you.</span></h1><p className="muted mt-4 max-w-xl leading-7 text-sm">Search across countries, categories, media formats, and a global community of creators.</p></>}
+ <form method="get" className="panel panel-pad gallery-search mt-9 mb-9"><div className="field"><label htmlFor="q">Search artworks & artists</label><div className="relative"><Search size={17} className="absolute left-3 top-3.5 muted"/><input className="input pl-10" id="q" name="q" defaultValue={s.q || ''} placeholder="Art, creator, or tag..."/></div></div><div className="field"><label htmlFor="category">Category</label><select className="input" name="category" id="category" defaultValue={s.category || ''}><option value="">All categories</option>{cats.map(c => <option key={c.id} value={c.slug}>{c.name}</option>)}</select></div><div className="field"><label htmlFor="country">Country</label><select className="input" name="country" id="country" defaultValue={s.country || ''}><option value="">All countries</option>{COUNTRIES.map(c => <option value={c[0]} key={c[0]}>{c[2]} {c[1]}</option>)}</select></div><div className="field"><label htmlFor="media">Format</label><select className="input" name="media" id="media" defaultValue={s.media || ''}>{options.map(([v, n]) => <option key={v} value={v}>{n}</option>)}</select></div><div className="field"><label htmlFor="sort">Sort by</label><select className="input" name="sort" id="sort" defaultValue={s.sort || 'popular'}><option value="popular">Most liked</option><option value="latest">Newest</option><option value="oldest">Oldest</option><option value="title">A–Z</option></select></div><button className="pill pill-primary h-[47px]" type="submit"><SlidersHorizontal size={15}/> Apply</button></form>
+ <div className="flex justify-between items-center mb-5"><h2 className="subhead">Explore artworks <span className="muted font-normal text-sm">({arts.length} results)</span></h2><Link className="muted text-xs hover:text-emerald-700" href="/explore">Clear filters ↻</Link></div><ArtworkGrid items={arts} user={user} empty="Try different filters, or upload the first artwork in this category."/>
+ </main>;
+}
+
