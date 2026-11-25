@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title desc">
+<title id="title">The Starry Night — illustrated study card</title>
+<desc id="desc">An original educational illustration of a swirling blue night sky and a quiet village, referencing Vincent van Gogh's 1889 painting without reproducing the original artwork.</desc>
+<defs>
+ <linearGradient id="night" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#101e49"/><stop offset=".55" stop-color="#315b87"/><stop offset="1" stop-color="#718ba4"/></linearGradient>
+ <radialGradient id="moon"><stop stop-color="#fff4c8"/><stop offset=".6" stop-color="#f3cf76"/><stop offset="1" stop-color="#e4a85e" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="900" height="700" rx="34" fill="url(#night)"/>
+<circle cx="735" cy="142" r="118" fill="url(#moon)"/>
+<path d="M-30 175C110 70 190 280 320 175S520 75 630 165s185 105 310 5" fill="none" stroke="#a9d1e3" stroke-width="42" stroke-linecap="round" opacity=".22"/>
+<path d="M-40 260C110 150 220 365 365 255S575 150 690 250s160 95 280 0" fill="none" stroke="#f4d38a" stroke-width="16" stroke-linecap="round" opacity=".62"/>
+<path d="M-30 330C120 215 240 445 390 320s270-120 400-10 140 100 180 40" fill="none" stroke="#8ec2dc" stroke-width="24" stroke-linecap="round" opacity=".42"/>
+<g fill="#ffe6a1">
+ <path d="M180 105l10 28 28 10-28 10-10 28-10-28-28-10 28-10z"/>
+ <path d="M455 92l8 23 23 8-23 8-8 23-8-23-23-8 23-8z"/>
+ <path d="M615 315l9 25 25 9-25 9-9 25-9-25-25-9 25-9z"/>
+ <path d="M325 230l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+</g>
+<g fill="#f9e9c4" opacity=".8"><circle cx="90" cy="250" r="6"/><circle cx="520" cy="185" r="5"/><circle cx="800" cy="320" r="7"/><circle cx="405" cy="110" r="4"/></g>
+<path d="M0 495Q120 420 230 480T470 465T690 480T900 440V700H0Z" fill="#172849"/>
+<path d="M0 545Q140 475 260 530T500 510T720 535T900 500V700H0Z" fill="#0d1a33"/>
+<path d="M105 700V555L160 500 215 555V700Z" fill="#f2c16f"/><path d="M95 565L160 485 225 565Z" fill="#d47b72"/>
+<path d="M130 700V590H190V700Z" fill="#24395c"/><rect x="145" y="610" width="13" height="20" fill="#f8df9c"/><rect x="168" y="610" width="13" height="20" fill="#f8df9c"/>
+<path d="M680 700V585L740 520 800 585V700Z" fill="#344d6b"/><path d="M670 590L740 505 810 590Z" fill="#d98a75"/><rect x="720" y="620" width="38" height="80" fill="#152847"/>
+<path d="M405 700V560L465 490 525 560V700Z" fill="#294260"/><path d="M395 565L465 475 535 565Z" fill="#e3b56f"/><rect x="448" y="600" width="34" height="100" fill="#132543"/>
+<path d="M300 700Q315 640 330 700M565 700Q580 640 595 700" stroke="#83a88c" stroke-width="16" fill="none" stroke-linecap="round"/>
+<rect x="38" y="36" width="260" height="34" rx="17" fill="#ffffff" opacity=".13"/>
+<text x="58" y="59" fill="#fff2d2" font-family="Arial,sans-serif" font-size="14" letter-spacing="3">ART HISTORY / STUDY CARD</text>
+<rect x="38" y="602" width="824" height="70" rx="18" fill="#fffdf8" opacity=".94"/>
+<text x="68" y="634" fill="#263b60" font-family="Georgia,serif" font-size="26">The Starry Night</text>
+<text x="68" y="655" fill="#667a94" font-family="Arial,sans-serif" font-size="13">Vincent van Gogh · 1889 · Original educational illustration, not the original painting</text>
+</svg>
