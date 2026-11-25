@@ -1,0 +1,21 @@
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { ArrowLeft, CalendarDays, Globe2, Tag, ArrowUpRight } from 'lucide-react';
+import ArtworkMedia from '@/components/ArtworkMedia';
+import ArtworkDetailsActions from '@/components/ArtworkDetailsActions';
+import ArtworkGrid from '@/components/ArtworkGrid';
+import { currentUser } from '@/lib/auth';
+import { oneArtwork, getComments, listArtworks, dateLabel } from '@/lib/data';
+import { countryFlag, countryName } from '@/lib/countries';
+import { query } from '@/lib/db';
+export const dynamic = 'force-dynamic';
+export default async function ArtworkDetails({ params }) {
+    const { id } = await params;
+    const user = await currentUser();
+    const art = await oneArtwork(id, user?.id);
+    if (!art)
+        notFound();
+    const [comments, related, collections] = await Promise.all([getComments(id), listArtworks({ category: '', limit: 4, sort: 'latest', userId: user?.id }), user?.role === 'member' ? query('SELECT id,name FROM collections WHERE user_id=$1 ORDER BY created_at DESC', [user.id]).then(r => r.rows) : []]);
+    return <main className="container-page pt-8 pb-16"><Link href="/explore" className="inline-flex items-center gap-2 text-xs font-bold muted hover:text-emerald-700 mb-7"><ArrowLeft size={15}/> BACK TO EXPLORE</Link><div className="detail-layout"><div className="detail-media"><ArtworkMedia art={art} full/></div><aside className="detail-sidebar"><div className="eyebrow">{art.category_name} / {art.media_type}</div><h1 className="serif text-4xl sm:text-5xl leading-tight mt-3">{art.title}</h1><Link href={`/creators/${art.user_id}`} className="flex items-center gap-3 mt-6 group"><div className="w-11 h-11 rounded-full bg-emerald-200 flex items-center justify-center font-black">{art.creator_name[0]}</div><div><div className="text-sm font-extrabold group-hover:text-emerald-700">{art.creator_name}</div><div className="text-xs muted">@{art.creator_handle} · View profile ↗</div></div></Link><p className="text-sm leading-7 text-[#62596e] whitespace-pre-wrap mt-6">{art.description}</p>{(art.original_artist || art.creation_year || art.creation_location || art.medium || art.collection_name || art.source_url || art.license_label) && <section className="artwork-provenance panel p-5 mt-6"><div className="eyebrow">ARTWORK PROVENANCE</div><h2 className="font-bold text-base mt-2 mb-4">About the original work</h2><div className="provenance-grid">{art.original_artist && <div><span>Original artist</span><strong>{art.original_artist}</strong></div>}{art.creation_year && <div><span>Year created</span><strong>{art.creation_year}</strong></div>}{art.creation_location && <div><span>Place created</span><strong>{art.creation_location}</strong></div>}{art.medium && <div><span>Medium / technique</span><strong>{art.medium}</strong></div>}{art.collection_name && <div><span>Current collection</span><strong>{art.collection_name}</strong></div>}{art.license_label && <div><span>Rights / license</span><strong>{art.license_label}</strong></div>}</div>{art.source_url && <a className="provenance-source" href={art.source_url} target="_blank" rel="noopener noreferrer">View original source <ArrowUpRight size={14}/></a>}</section>}<div className="flex flex-wrap gap-2 mt-5">{art.tags.map(t => <Link key={t} href={`/explore?q=${encodeURIComponent(t)}`} className="tag">#{t}</Link>)}</div><div className="grid grid-cols-2 gap-3 mt-7 text-xs"><div className="panel p-3"><div className="muted mb-1">Country of origin</div><strong>{countryFlag(art.country_code)} {countryName(art.country_code)}</strong></div><div className="panel p-3"><div className="muted mb-1">Published</div><strong>{dateLabel(art.created_at)}</strong></div></div><ArtworkDetailsActions art={art} user={user} comments={comments} collections={collections}/></aside></div><section className="section-pad"><div className="section-head"><div><div className="eyebrow">KEEP EXPLORING</div><h2 className="serif section-title mt-2">More to <span className="gradient-text">discover.</span></h2></div><Link className="pill pill-secondary" href="/explore">Explore all <ArrowUpRight size={15}/></Link></div><ArtworkGrid items={related.filter(a => String(a.id) !== String(art.id)).slice(0, 4)} user={user}/></section></main>;
+}
+
