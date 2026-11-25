@@ -1,22 +1,38 @@
 {
-  "name": "art-showcase",
-  "version": "0.1.0",
+  "name": "spektra-art-showcase",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "db:setup": "node --env-file=.env.local scripts/setup-db.mjs",
+    "db:seed": "node --env-file=.env.local scripts/seed.mjs",
+    "assets:check": "node scripts/check-category-assets.mjs",
+    "db:check": "node --env-file=.env.local scripts/check-db-config.mjs",
+    "game:check": "node scripts/check-adventure.mjs",
+    "check:static": "node scripts/check-category-assets.mjs && node scripts/check-adventure.mjs && node --env-file=.env.local scripts/check-db-config.mjs",
+    "check": "node scripts/check-category-assets.mjs && node scripts/check-adventure.mjs && node --env-file=.env.local scripts/check-db-config.mjs && eslint .",
+    "db:verify": "node --env-file=.env.local scripts/verify-db.mjs"
   },
   "dependencies": {
-    "next": "16.4.6",
-    "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "next": "^16.4.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "pg": "^8.16.3",
+    "bcryptjs": "^3.0.2",
+    "lucide-react": "^0.468.0"
   },
   "devDependencies": {
-    "@tailwindcss/turbopack": "4.3.3",
-    "eslint": "^9",
-    "eslint-config-next": "16.4.6",
-    "tailwindcss": "4.3.3"
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "postcss": "^8.5.0",
+    "eslint": "^10.15.0",
+    "@next/eslint-plugin-next": "^16.4.6",
+    "eslint-plugin-react-hooks": "^7.1.1"
+  },
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
   }
 }

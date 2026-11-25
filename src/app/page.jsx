@@ -20,7 +20,7 @@ function hasLocalMediaFile(artwork) {
   if (!filePath.startsWith(publicRoot + sep)) return false;
   return existsSync(filePath);
 }
-export const dynamic = 'force-dynamic';
+
 export default async function Home() {
     const user = await currentUser();
     const [categories, trending, latest, challenges, stats, origins, spotlight, archiveImages, videoWorks, audioWorks] = await Promise.all([
