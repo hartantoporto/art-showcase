@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540">
+<defs><linearGradient id="roof" x1="0" x2="1"><stop stop-color="#b13e50"/><stop offset=".5" stop-color="#e4757e"/><stop offset="1" stop-color="#b13e50"/></linearGradient><filter id="sh"><feDropShadow dx="0" dy="20" stdDeviation="12" flood-opacity=".13"/></filter></defs>
+<ellipse cx="360" cy="500" rx="315" ry="25" fill="#c09d8e" opacity=".2"/><g filter="url(#sh)"><path d="M355 55L88 245H632Z" fill="#fff1de" stroke="#9c3745" stroke-width="9"/><path d="M355 55L200 245H290Z" fill="url(#roof)"/><path d="M355 55L450 245H535Z" fill="url(#roof)"/>
+<path d="M88 245L60 461Q205 500 360 484Q515 500 660 461L632 245Z" fill="#fff1de" stroke="#9c3745" stroke-width="9"/><path d="M178 245L158 481L249 484L275 245Z" fill="url(#roof)"/><path d="M445 245L472 484L562 481L543 245Z" fill="url(#roof)"/>
+<path d="M284 485Q280 342 360 340Q442 342 436 485" fill="#4e2933"/><path d="M360 344Q328 404 316 482H360Z" fill="#f7dca7" opacity=".25"/>
+<path d="M65 460Q120 503 177 470Q240 510 300 478Q360 512 420 478Q480 510 540 470Q602 505 656 460" stroke="#e1b367" stroke-width="18" fill="none"/>
+</g><path d="M355 55V8" stroke="#9c3745" stroke-width="8"/><path d="M355 9L432 30L355 51Z" fill="#e9be78"/><g fill="#e9be78"><path d="M360 115l9 19 21 3-15 14 4 21-19-10-19 10 4-21-15-14 21-3z"/><circle cx="112" cy="290" r="12"/><circle cx="604" cy="290" r="12"/></g></svg>

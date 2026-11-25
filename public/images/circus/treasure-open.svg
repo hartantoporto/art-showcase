@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" role="img" aria-label="Peti harta karun terbuka">
+<defs><linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d47b58"/><stop offset="1" stop-color="#904153"/></linearGradient><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff6c9"/><stop offset=".5" stop-color="#f3d070"/><stop offset="1" stop-color="#c68c43"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="12"/></filter></defs>
+<ellipse cx="180" cy="125" rx="133" ry="114" fill="#f7e2a5" opacity=".6" filter="url(#glow)"/>
+<path d="M50 119C65 61 122 21 182 31s109 49 119 103l-26 10c-34-39-69-55-106-54-43 0-76 19-92 44Z" fill="url(#wood)" stroke="#693b49" stroke-width="10"/>
+<path d="M79 113C103 67 144 51 184 55s69 23 90 59" fill="none" stroke="url(#gold)" stroke-width="18"/>
+<path d="M58 147l245-4-16 28H73Z" fill="#713d4c" stroke="#663547" stroke-width="7"/>
+<g fill="#f7cf75" stroke="#d29b43" stroke-width="3"><circle cx="113" cy="138" r="31"/><circle cx="154" cy="137" r="37"/><circle cx="202" cy="127" r="40"/><circle cx="244" cy="137" r="33"/><circle cx="181" cy="147" r="33"/></g>
+<rect x="53" y="157" width="254" height="96" rx="20" fill="url(#wood)" stroke="#693b49" stroke-width="10"/>
+<path d="M61 192H298M62 224H298" stroke="#ffd886" stroke-width="12" opacity=".83"/>
+<rect x="75" y="161" width="24" height="84" rx="8" fill="url(#gold)"/><rect x="262" y="160" width="24" height="84" rx="8" fill="url(#gold)"/>
+<rect x="152" y="154" width="55" height="57" rx="10" fill="url(#gold)" stroke="#ad723b" stroke-width="5"/><path d="M179 164l8 12-8 12-8-12Z" fill="#b25770"/>
+<g fill="#f9d66a"><path d="M55 49l7 18 18 7-18 7-7 18-7-18-18-7 18-7Z"/><path d="M311 44l6 16 16 6-16 6-6 16-6-16-16-6 16-6Z"/><path d="M174 7l6 19 19 6-19 6-6 19-6-19-19-6 19-6Z"/></g>
+</svg>
