@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">Midnight Carnival</title><desc id="desc">Original vector painting of a glowing circus tent beneath a swirling midnight sky.</desc>
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101b3b"/><stop offset=".55" stop-color="#293b69"/><stop offset="1" stop-color="#6e6a91"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#ffe8a3" stop-opacity=".8"/><stop offset="1" stop-color="#ffe8a3" stop-opacity="0"/></radialGradient>
+ <linearGradient id="tent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4a4a0"/><stop offset="1" stop-color="#d95c72"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff0bd"/><stop offset="1" stop-color="#e9b85f"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+ <pattern id="dots" width="46" height="46" patternUnits="userSpaceOnUse"><circle cx="7" cy="8" r="2" fill="#fff" opacity=".24"/></pattern>
+</defs>
+<rect width="1200" height="900" fill="url(#sky)"/><rect width="1200" height="900" fill="url(#dots)"/>
+<circle cx="930" cy="175" r="230" fill="url(#glow)"/>
+<path d="M-40 265C120 65 275 365 455 190S760 65 915 185s230 90 340-30" fill="none" stroke="#8cb7c5" stroke-width="24" opacity=".17" stroke-linecap="round"/>
+<path d="M-40 335C150 155 270 430 465 250s315-95 445 5 225 100 335-10" fill="none" stroke="#e4b7a0" stroke-width="8" opacity=".24" stroke-linecap="round"/>
+<path d="M85 640C245 560 340 610 460 575s245-40 345 12 205 70 335 8" fill="none" stroke="#d7c8a0" stroke-width="4" opacity=".35"/>
+<g fill="#ffe6a5"><path d="M230 145l10 28 28 10-28 10-10 28-10-28-28-10 28-10z"/><path d="M750 110l8 22 22 8-22 8-8 22-8-22-22-8 22-8z"/><path d="M1040 350l8 22 22 8-22 8-8 22-8-22-22-8 22-8z"/><path d="M420 385l6 17 17 6-17 6-6 17-6-17-17-6 17-6z"/></g>
+<g fill="#f8c7a8" opacity=".8"><circle cx="575" cy="160" r="5"/><circle cx="1080" cy="130" r="7"/><circle cx="180" cy="390" r="5"/><circle cx="860" cy="440" r="6"/><circle cx="675" cy="320" r="4"/></g>
+<ellipse cx="600" cy="754" rx="420" ry="62" fill="#0a1229" opacity=".42" filter="url(#shadow)"/>
+<path d="M150 760Q600 650 1050 760" fill="none" stroke="#f5d18b" stroke-width="8" opacity=".65"/>
+<path d="M220 735L600 330 980 735Z" fill="url(#tent)" stroke="#ffe2ad" stroke-width="9"/>
+<path d="M600 330L600 735H410Z" fill="#fff0d3" opacity=".94"/>
+<path d="M600 330L790 735H600Z" fill="#f7c36e"/>
+<path d="M220 735L410 735 600 330Z" fill="#d85e77" opacity=".96"/>
+<path d="M790 735L980 735 600 330Z" fill="#b94f72" opacity=".95"/>
+<path d="M220 735Q600 815 980 735" fill="none" stroke="#fff0cf" stroke-width="18" stroke-linecap="round"/>
+<path d="M540 735V570Q600 510 660 570V735Z" fill="#27345b" stroke="#ffe3aa" stroke-width="10"/>
+<path d="M560 735V588Q600 550 640 588V735" fill="#f6d58d"/>
+<path d="M600 330L600 270" stroke="#ffe6ad" stroke-width="12" stroke-linecap="round"/>
+<path d="M600 255l-20 20 20 20 20-20z" fill="url(#gold)" stroke="#fff2c7" stroke-width="4"/>
+<g fill="#fff1c6"><circle cx="355" cy="655" r="9"/><circle cx="845" cy="655" r="9"/><circle cx="475" cy="505" r="8"/><circle cx="725" cy="505" r="8"/></g>
+<path d="M135 785Q600 860 1065 785" fill="none" stroke="#e8b66e" stroke-width="6" opacity=".8"/>
+<text x="600" y="850" text-anchor="middle" fill="#fff2d5" font-family="Georgia,serif" font-size="27" letter-spacing="9">MIDNIGHT CARNIVAL · 2026</text>
+</svg>
