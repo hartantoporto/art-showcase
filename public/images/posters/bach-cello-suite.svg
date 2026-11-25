@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#243f37"/><stop offset=".55" stop-color="#6e9b83"/><stop offset="1" stop-color="#e6c6a2"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#f7e6c5" stop-opacity=".8"/><stop offset="1" stop-color="#f7e6c5" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="1200" rx="64" fill="url(#bg)"/>
+<circle cx="870" cy="280" r="430" fill="url(#glow)"/>
+<g fill="none" stroke="#f8f1e4" stroke-opacity=".5" stroke-width="4">
+ <path d="M80 640 C220 430 350 850 500 640 S780 430 930 640 S1080 850 1160 620"/>
+ <path d="M80 720 C220 510 350 930 500 720 S780 510 930 720 S1080 930 1160 700"/>
+ <path d="M80 800 C220 590 350 1010 500 800 S780 590 930 800 S1080 1010 1160 780"/>
+</g>
+<g fill="#f7e8ce"><circle cx="210" cy="260" r="12"/><circle cx="980" cy="480" r="9"/><circle cx="760" cy="180" r="7"/></g>
+<text x="92" y="150" fill="#f7e8ce" font-family="Georgia,serif" font-size="32" letter-spacing="10">SPEKTRA SOUND ARCHIVE</text>
+<text x="92" y="900" fill="#fffaf0" font-family="Georgia,serif" font-size="76">Cello Suite No. 1</text>
+<text x="96" y="985" fill="#fffaf0" font-family="Georgia,serif" font-size="48" font-style="italic">Prelude · BWV 1007</text>
+<text x="96" y="1080" fill="#f7e8ce" font-family="Arial,sans-serif" font-size="28" letter-spacing="5">JOHANN SEBASTIAN BACH</text>
+</svg>

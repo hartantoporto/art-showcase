@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0c8a7"/><stop offset=".5" stop-color="#b96d72"/><stop offset="1" stop-color="#4b6260"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#fff1cc" stop-opacity=".9"/><stop offset="1" stop-color="#fff1cc" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="1200" rx="64" fill="url(#bg)"/>
+<circle cx="850" cy="320" r="450" fill="url(#glow)"/>
+<g fill="none" stroke="#fff5e8" stroke-width="5" stroke-opacity=".62">
+ <path d="M100 470 C240 260 330 680 470 470 S700 260 840 470 S1040 680 1120 430"/>
+ <path d="M100 570 C240 360 330 780 470 570 S700 360 840 570 S1040 780 1120 530"/>
+ <path d="M100 670 C240 460 330 880 470 670 S700 460 840 670 S1040 880 1120 630"/>
+</g>
+<g fill="#fff1d6"><circle cx="220" cy="240" r="10"/><circle cx="960" cy="190" r="8"/><circle cx="1020" cy="780" r="13"/></g>
+<text x="92" y="150" fill="#fff5e8" font-family="Georgia,serif" font-size="32" letter-spacing="10">SPEKTRA SOUND ARCHIVE</text>
+<text x="92" y="900" fill="#fffaf0" font-family="Georgia,serif" font-size="70">Eine kleine</text>
+<text x="92" y="985" fill="#fffaf0" font-family="Georgia,serif" font-size="70">Nachtmusik</text>
+<text x="96" y="1080" fill="#fff1d6" font-family="Arial,sans-serif" font-size="28" letter-spacing="5">WOLFGANG AMADEUS MOZART · ALLEGRO</text>
+</svg>
