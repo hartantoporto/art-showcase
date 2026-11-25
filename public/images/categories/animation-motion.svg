@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Original SPEKTRA category illustration: Motion Graphics">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F3E2EC"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D98FB5"/><stop offset="1" stop-color="#8B8ACB"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#53465f" flood-opacity=".13"/></filter>
+  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#75677F" opacity=".12"/></pattern>
+</defs>
+<rect width="900" height="700" rx="44" fill="url(#bg)"/>
+<rect width="900" height="700" rx="44" fill="url(#dots)"/>
+<circle cx="145" cy="130" r="95" fill="#8B8ACB" opacity=".17"/>
+<circle cx="770" cy="570" r="140" fill="#D98FB5" opacity=".16"/>
+<g filter="url(#shadow)"><path d="M150 480 C260 170 420 170 520 430 S720 680 780 280" fill="none" stroke="#D98FB5" stroke-width="70" stroke-linecap="round"/><path d="M140 350 C260 620 440 620 560 340 S730 120 780 500" fill="none" stroke="#8B8ACB" stroke-width="30" stroke-linecap="round"/><circle cx="300" cy="250" r="32" fill="#F1C47F"/><circle cx="660" cy="530" r="24" fill="#83BFAF"/></g>
+<path d="M85 610 Q210 565 310 610" fill="none" stroke="#D98FB5" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+<circle cx="755" cy="145" r="10" fill="#8B8ACB"/><circle cx="790" cy="180" r="6" fill="#D98FB5"/>
+</svg>

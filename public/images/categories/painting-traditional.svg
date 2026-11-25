@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Original SPEKTRA category illustration: Painting">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8E8D7"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E7A36E"/><stop offset="1" stop-color="#8EBFAE"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#53465f" flood-opacity=".13"/></filter>
+  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#75677F" opacity=".12"/></pattern>
+</defs>
+<rect width="900" height="700" rx="44" fill="url(#bg)"/>
+<rect width="900" height="700" rx="44" fill="url(#dots)"/>
+<circle cx="145" cy="130" r="95" fill="#8EBFAE" opacity=".17"/>
+<circle cx="770" cy="570" r="140" fill="#E7A36E" opacity=".16"/>
+<g filter="url(#shadow)"><ellipse cx="440" cy="400" rx="210" ry="155" fill="#FFF9F0" stroke="#705A51" stroke-width="14" transform="rotate(-12 440 400)"/><circle cx="345" cy="350" r="36" fill="#E58D72"/><circle cx="445" cy="300" r="34" fill="#E8C56D"/><circle cx="540" cy="360" r="34" fill="#83B9A8"/><circle cx="505" cy="465" r="35" fill="#8D8BC8"/><circle cx="365" cy="475" r="34" fill="#D88EB2"/><path d="M590 190 L700 300 L680 320 L570 210Z" fill="#6C4B3E"/><path d="M560 205 L590 175 L620 205 L590 235Z" fill="#E6B56C"/></g>
+<path d="M85 610 Q210 565 310 610" fill="none" stroke="#E7A36E" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+<circle cx="755" cy="145" r="10" fill="#8EBFAE"/><circle cx="790" cy="180" r="6" fill="#E7A36E"/>
+</svg>

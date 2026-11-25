@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Original SPEKTRA category illustration: Graphic Design">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8E9FA"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C83C8"/><stop offset="1" stop-color="#E9A6A9"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#53465f" flood-opacity=".13"/></filter>
+  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#75677F" opacity=".12"/></pattern>
+</defs>
+<rect width="900" height="700" rx="44" fill="url(#bg)"/>
+<rect width="900" height="700" rx="44" fill="url(#dots)"/>
+<circle cx="145" cy="130" r="95" fill="#E9A6A9" opacity=".17"/>
+<circle cx="770" cy="570" r="140" fill="#7C83C8" opacity=".16"/>
+<g filter="url(#shadow)"><rect x="250" y="160" width="400" height="470" rx="20" fill="#FFFDFB" stroke="#46415E" stroke-width="12"/><rect x="295" y="210" width="310" height="105" rx="8" fill="url(#accent)"/><circle cx="390" cy="430" r="80" fill="#E9A6A9"/><path d="M475 350 L610 515 H475Z" fill="#7C83C8"/><rect x="300" y="535" width="130" height="18" rx="9" fill="#46415E"/><rect x="300" y="570" width="240" height="12" rx="6" fill="#C4C0D8"/></g>
+<path d="M85 610 Q210 565 310 610" fill="none" stroke="#7C83C8" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+<circle cx="755" cy="145" r="10" fill="#E9A6A9"/><circle cx="790" cy="180" r="6" fill="#7C83C8"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Original SPEKTRA category illustration: Music &amp; Sound">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5E2EC"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D78DB3"/><stop offset="1" stop-color="#8D8BC8"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#53465f" flood-opacity=".13"/></filter>
+  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#75677F" opacity=".12"/></pattern>
+</defs>
+<rect width="900" height="700" rx="44" fill="url(#bg)"/>
+<rect width="900" height="700" rx="44" fill="url(#dots)"/>
+<circle cx="145" cy="130" r="95" fill="#8D8BC8" opacity=".17"/>
+<circle cx="770" cy="570" r="140" fill="#D78DB3" opacity=".16"/>
+<g filter="url(#shadow)"><path d="M170 390 Q230 180 290 390 T410 390 T530 390 T650 390 T770 390" fill="none" stroke="#6B4E78" stroke-width="22" stroke-linecap="round"/><circle cx="300" cy="250" r="56" fill="#D78DB3"/><path d="M300 250 V450 Q300 500 250 500 Q205 500 205 465 Q205 425 260 420 Q280 418 300 430" fill="#6B4E78"/><path d="M300 250 L450 210 V410" fill="none" stroke="#6B4E78" stroke-width="18" stroke-linecap="round"/><circle cx="450" cy="415" r="34" fill="#8D8BC8"/></g>
+<path d="M85 610 Q210 565 310 610" fill="none" stroke="#D78DB3" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+<circle cx="755" cy="145" r="10" fill="#8D8BC8"/><circle cx="790" cy="180" r="6" fill="#D78DB3"/>
+</svg>

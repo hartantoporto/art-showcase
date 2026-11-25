@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-label="Original SPEKTRA category illustration: Digital Illustration">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E9DDFB"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A98BEA"/><stop offset="1" stop-color="#F5B5C8"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#53465f" flood-opacity=".13"/></filter>
+  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#75677F" opacity=".12"/></pattern>
+</defs>
+<rect width="900" height="700" rx="44" fill="url(#bg)"/>
+<rect width="900" height="700" rx="44" fill="url(#dots)"/>
+<circle cx="145" cy="130" r="95" fill="#F5B5C8" opacity=".17"/>
+<circle cx="770" cy="570" r="140" fill="#A98BEA" opacity=".16"/>
+<g filter="url(#shadow)"><path d="M300 470 C210 380 260 210 390 190 C520 170 650 270 620 390 C600 500 410 560 300 470Z" fill="url(#accent)"/><circle cx="455" cy="310" r="92" fill="#FFF8F1"/><path d="M400 290 Q455 220 510 290 Q520 365 455 380 Q390 365 400 290Z" fill="#4B3A66"/><circle cx="430" cy="315" r="10" fill="#FFF"/><circle cx="480" cy="315" r="10" fill="#FFF"/><path d="M435 350 Q455 370 478 350" fill="none" stroke="#FFF" stroke-width="9" stroke-linecap="round"/><path d="M240 260 l25 -40 25 40 -25 40Z" fill="#F5B56E"/><path d="M650 420 l18 -30 18 30 -18 30Z" fill="#78C8B6"/></g>
+<path d="M85 610 Q210 565 310 610" fill="none" stroke="#A98BEA" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+<circle cx="755" cy="145" r="10" fill="#F5B5C8"/><circle cx="790" cy="180" r="6" fill="#A98BEA"/>
+</svg>
